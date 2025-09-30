@@ -1,0 +1,103 @@
+/* Fondo general */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor del formulario */
+.form-premium {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  max-width: 450px;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+.form-premium h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #243b55;
+  font-size: 1.8rem;
+}
+
+/* Labels */
+.form-premium label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs y selects */
+.form-premium input[type="text"],
+.form-premium input[type="email"],
+.form-premium input[type="tel"],
+.form-premium input[type="date"],
+.form-premium select,
+.form-premium textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto focus */
+.form-premium input:focus,
+.form-premium select:focus,
+.form-premium textarea:focus {
+  border-color: #00b894;
+  box-shadow: 0 0 8px rgba(0,184,148,0.4);
+  outline: none;
+}
+
+/* Checkbox */
+.form-premium input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.form-premium a {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+.form-premium a:hover {
+  text-decoration: underline;
+}
+
+/* Botón */
+.form-premium input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #00b894, #0984e3);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-premium input[type="submit"]:hover {
+  background: linear-gradient(135deg, #0984e3, #00b894);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
